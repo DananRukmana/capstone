@@ -51,9 +51,9 @@ st.markdown('<div class="header-scan"> Scan Kesegaran Ikan</div>', unsafe_allow_
 
 # ====== Load Models ======
 base_path = os.path.join(os.path.dirname(__file__), '..', 'model')
-model_ikan = load_model(os.path.join(base_path, 'model', 'model_cek_ikan.h5'))
-model_kepala = load_model(os.path.join(base_path,'model', 'model_cek_kepala_ikan.h5'))
-model_kesegaran = load_model(os.path.join(base_path,'model', 'model_last_ikan.h5'))
+model_ikan = load_model(os.path.join(base_path, 'model_cek_ikan.h5'))
+model_kepala = load_model(os.path.join(base_path, 'model_cek_kepala_ikan.h5'))
+model_kesegaran = load_model(os.path.join(base_path, 'model_last_ikan.h5'))
 
 # ====== Fungsi Prediksi Umum ======
 def prediksi_model(img, model, threshold, kelas_utama, kelas_tidak):
